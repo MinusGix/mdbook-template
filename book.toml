@@ -1,0 +1,25 @@
+[book]
+authors = ["MinusGix"]
+language = "en"
+multilingual = false
+src = "src"
+title = "(Fill in )"
+
+[output.katex]
+
+[output.html]
+additional-css = ["./assets/css/mdbook-admonish.css", "./assets/css/custom.css"]
+additional-js = ["./assets/js/mermaid.min.js", "./assets/js/mermaid-init.js"]
+# git-repository-url = "" # TODO
+
+[preprocessor.katex]
+renderers = ["html"]
+
+[preprocessor.footnote]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0"    # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
